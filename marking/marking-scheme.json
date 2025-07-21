@@ -1,0 +1,489 @@
+{
+  "totalMark": 16.5,
+  "wsosSections": {
+    "1": "Work organization and management",
+    "2": "Communication and interpersonal skills", 
+    "3": "Website Design",
+    "4": "Layout",
+    "5": "Front-End Development",
+    "6": "Back-End Development",
+    "7": "Content Management Systems"
+  },
+  "subCriterions": [
+    {
+      "name": "Developer",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Header Visual Bar with title and page title",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "App Title: WorldSkills - Games. Page title reflects the main content title",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Document title must reflect the shown page title",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Page title content is included as whole or part of the document title.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Register, Sign In, Sign Out button",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "If the user is not signed in, show Sign In and Register. If the user is signed in, show Sign Out",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Developer can see \"my games\" list",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Developer can upload a game via zip",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Able to unzip uploaded file. New version is created every time when uploaded.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Developer can edit game meta",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Title, description",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Developer can un-publish existing game",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Un-published games is not viewable in public, but viewable to developer",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Developer can view game matrix of the uploaded games",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Play time, unique players, high scores",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Developer can view the game status of blocked",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgment",
+          "description": "Create easy-to-maintain JavaScript code",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "judgment",
+            "judgmentLevels": [
+              {
+                "score": 0,
+                "description": "JavaScript code is unorganized, without indentation and no comments"
+              },
+              {
+                "score": 1,
+                "description": "JavaScript code have a good indentation, with meaningful variable names but not comments"
+              },
+              {
+                "score": 2,
+                "description": "JavaScript code have a good indentation, with meaningful variable names and a few comments but no describe the functions and methods functionalities"
+              },
+              {
+                "score": 3,
+                "description": "JavaScript code is very organized, with meaningful variable names, including perfect indentation and comments of the functions and methods"
+              }
+            ]
+          }
+        },
+        {
+          "type": "judgment",
+          "description": "Use of framework/library of choice",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "judgment",
+            "judgmentLevels": [
+              {
+                "score": 0,
+                "description": "Framework/libraries not used at all"
+              },
+              {
+                "score": 1,
+                "description": "Framework/libraries used but too much manual coding"
+              },
+              {
+                "score": 2,
+                "description": "Framework/libraries used but not according to best practice"
+              },
+              {
+                "score": 3,
+                "description": "Make best use of the framework/library for best practice, such as don't-repeat-yourself. And not over-kill with too many frameworks together."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Discovering games",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "URL is reachable",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "/XX_module_d/",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "For each game, all fields as described shown",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Title, score count, description, thumbnail. Deduct .25 point per each type of missing. Thumbnail uses uploaded thumbnail.png file if provided, or general image file.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "List sort options",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "Popularity, recently updated, title. Ascending and descending. Deduct .25 point per each type of missing.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Visitor (User) can sign up",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "And should go to /XX_module_d/ after signed-up",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Only one password field in sign-up form",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Response message is shown after server response",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Visitor (User) can sign-in.",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Visitor (User) can sign out.",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The current page is reflected in the URL. A page refresh shows the list on the same sort settings.",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "In infinite scroll, there are no pages, but scrolling triggers loading of more games.",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "An initial number of games are loaded so they overflow the user's screen.",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "If the user scrolls towards the end of the loaded games, more games are loaded.",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "It never loads all games to save bandwidth. Loaded games are also rendered.",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "extraDescription": "It only loads as many games that are needed to render enough items so the user does not see the end of the list.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Can visit the user profile",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Shows username, authored game section, game high scores section. if the user has not uploaded any games, the authored games section is omitted.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Required information is shown per authored game",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "game title, description, thumbnail, number of submitted scores, and not the authored user. Deduct 0.25 per error.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "If the active user is looking at their own profile page, they also see games that have no version yet. They are also offered a button to \"Manage Game\".",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Games without version is hidden to other users visit",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "high scores list in user profile",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "The list shows highest the scores per game, and the game list is sorted by game title alphabetically",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "If a user tries to reach game management page without being the author, they are redirected to the game itself",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Visitors and Games",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "This page renders the game in an iframe and shows the current highscores",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The high score list is updated with 5 second polling interval",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Player's score is interleaved into the highscores.",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "If the user is within the top ten, the current user score is part of the top 10 score If the user highest score is not within the top ten, the score is appended to the end of the top 10 list, but shown without rank.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Player's score is highlighted when within the top 10 list",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Any form of highlighting, such as bold, or colored.",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "When the game ends, the user is asked if they want to publish their score",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Game posting API is done via parent page instead of embeded iframe game page inside iframe",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Game score is sent to parent page from within the iframe game page via postMessage",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "When the game score posts, the leaderboard should be updated immediately instead of waiting for the polling interval",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "Only for score that breaks the highest score of the current player",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Accessibilty, checked by Chrome Lighthouse",
+          "maxMark": 1.25,
+          "wsosSection": 4,
+          "extraDescription": "Deduct 0.25 per error reported. (Warning allowed) (Choose only accessibility)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgment",
+          "description": "Link Purpose (Link Only) meet WCAG 2.4.9 requirement for game listing page",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "calculation": {
+            "type": "judgment",
+            "judgmentLevels": [
+              {
+                "score": 0,
+                "description": "When reading the link by screen reader, the spoken text is empty or not related to the link text."
+              },
+              {
+                "score": 1,
+                "description": "When reading the link by screen reader, the spoken text not the same as the link text, but can still convey the message of the link purpose. e.g. the spoken text contains the game title but not conveying the link action, \"play\" or \"view\""
+              },
+              {
+                "score": 2,
+                "description": "When reading the link by screen reader, the spoken text contains only the link text and content not related to context (game title). E.g. \"Play the game\", \"View the game\""
+              },
+              {
+                "score": 3,
+                "description": "When reading the link by screen reader, the spoken text contains both the link text and the game title so the reader through screen reader software know the purpose of each link without needs to know the context around. E.g. \"Click to play XXX game.\""
+              }
+            ]
+          }
+        },
+        {
+          "type": "judgment",
+          "description": "Choice of colors, typography, spacing between the elements enhances the overall look and feel",
+          "maxMark": 1,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "judgment",
+            "judgmentLevels": [
+              {
+                "score": 0,
+                "description": "poor color contrast, poor font choice, poor spacing."
+              },
+              {
+                "score": 1,
+                "description": "color contrast, font choice, spacing are there but not enhancing the overall look and feel"
+              },
+              {
+                "score": 2,
+                "description": "color contrast, font choice, spacing are there but further improvements can be made"
+              },
+              {
+                "score": 3,
+                "description": "excellent choice of colors, typography and spacing enhances the overall look and feel"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
